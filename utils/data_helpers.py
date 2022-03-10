@@ -61,6 +61,7 @@ class QuickDrawDataset(Dataset):
             if os.path.isfile(cache_filepath):
                 self.data_all = np.load(cache_filepath)
             else: 
+                print(f'File not found {cache_filepath}')
                 self.load_data()
                 np.random.seed(self.random_seed)
                 np.random.shuffle(self.data_all)
