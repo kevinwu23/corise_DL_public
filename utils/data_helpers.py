@@ -21,7 +21,7 @@ from torch.utils.data import Dataset
 import utils.constants as const
 
 class QuickDrawDataset(Dataset):
-    def __init__(self, path_to_emoji_csvs, 
+    def __init__(self, path_to_emoji_csvs=None, 
                  doodle_to_emoji_map=const.DOODLE_TO_EMOJI_MAP,
                  ims_per_class=1000, imheight=28, imwidth=28, valfrac=0.1, testfrac=0.1,
                  cache_filepath=None, random_seed=42, dataloader_split='train'):
