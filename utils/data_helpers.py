@@ -18,7 +18,7 @@ from math import sqrt
 import torch
 from torch.utils.data import Dataset
 
-import utils.constants as const
+import corise_DL_public.utils.constants as const
 
 class QuickDrawDataset(Dataset):
     def __init__(self, path_to_emoji_csvs=None, 
